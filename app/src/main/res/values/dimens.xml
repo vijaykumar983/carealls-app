@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtSizeXXSmall">@dimen/_6sdp</dimen>
+    <dimen name="txtSizeXSmall">@dimen/_8sdp</dimen>
+    <dimen name="txtSizeSSmall">@dimen/_9sdp</dimen>
+    <dimen name="txtSizeSmall">@dimen/_10sdp</dimen>
+    <dimen name="txtSizeXNormal">@dimen/_11sdp</dimen>
+    <dimen name="txtSizeNormal">@dimen/_12sdp</dimen>
+    <dimen name="txtSizeSLarge">@dimen/_13sdp</dimen>
+    <dimen name="txtSizeLarge">@dimen/_14sdp</dimen>
+    <dimen name="txtSizeXLarge">@dimen/_16sdp</dimen>
+    <dimen name="txtSizeXXLarge">@dimen/_18sdp</dimen>
+    <dimen name="txtSizeXXXLarge">@dimen/_20sdp</dimen>
+    <dimen name="txtSizeTitle">@dimen/_14sdp</dimen>
+    <dimen name="txtSizeButton">@dimen/_14sdp</dimen>
+
+    <dimen name="btnNormalSize">@dimen/_35sdp</dimen>
+
+    <dimen name="bell_size">@dimen/_20sdp</dimen>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/rowPackageItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:padding="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:clipToPadding="false"
+        android:background="@drawable/bg_rounded_white_10sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:elevation="@dimen/_2sdp"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/tvPackageName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_medium"
+               android:text=""
+               android:textColor="@color/color_0057FF"
+               android:textSize="@dimen/txtSizeNormal" />
+
+           <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/tvDetail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_regular"
+               android:text=""
+               android:textColor="@color/color_4D4D4D"
+               android:textSize="@dimen/txtSizeSmall" />
+
+       </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_checked"
+            android:layout_weight="0"
+            android:visibility="invisible"
+            />
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lLNavHeader"
+            style="@style/HW_WM"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_nav_header"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imvClose"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:foreground="@drawable/ripple_round"
+                android:onClick="onClick"
+                android:padding="@dimen/_5sdp"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_close" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_minus5sdp"
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/ivNavProfile"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                   android:src="@drawable/user"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="0.5dp"
+                     />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtuserName"
+                        style="@style/HW_WW"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Vijay Kumawat"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/txtSizeXNormal" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvEmail"
+                        style="@style/HW_WW"
+                        android:fontFamily="@font/poppins_light"
+                        android:foreground="@drawable/ripple_rec"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="vijaykumawat@gmail.com"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/txtSizeSSmall" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

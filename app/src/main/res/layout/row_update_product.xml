@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rowUpdateProductItem"
+        android:layout_width="@dimen/_137sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:elevation="@dimen/_2sdp"
+        android:background="@drawable/bg_rounded_white_10sdp"
+        >
+
+   <!-- <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="0dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUpdateProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_product1"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/_2sdp"
+            />
+    </androidx.cardview.widget.CardView>-->
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/ivUpdateProduct"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@color/color_view"
+            android:scaleType="fitXY"
+            app:sriv_left_top_corner_radius="@dimen/_10sdp"
+            app:sriv_right_top_corner_radius="@dimen/_10sdp"
+            app:sriv_left_bottom_corner_radius="0dp"
+            app:sriv_right_bottom_corner_radius="0dp"
+            app:sriv_border_width="0dp"
+            app:sriv_border_color="#008fea"
+            android:layout_margin="@dimen/_2sdp"
+            app:sriv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/ivUpdateProduct"
+            >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvProductTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:onClick="onClick"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txtSizeSmall"
+            android:layout_margin="@dimen/_5sdp"
+            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_C4C4C4"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text=""
+                    android:textColor="@color/color_FF9B18"
+                    android:textSize="@dimen/txtSizeSmall"
+                    android:padding="@dimen/_5sdp"
+                    />
+            <LinearLayout
+                android:id="@+id/llEditProductListing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded_botton_blue_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/_3sdp"
+                android:foreground="@drawable/ripple_round"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:tint="@color/colorWhite"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_edit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Edit"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/txtSizeSmall" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

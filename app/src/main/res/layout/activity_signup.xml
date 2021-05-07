@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:clipToPadding="false"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:src="@drawable/ic_logo_blue" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="@dimen/txtSizeXLarge"
+                android:layout_below="@id/ivLogo"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_50sdp"
+                />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:layout_below="@id/txtSignup"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_edit_rounded"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/btnNormalSize"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/color_4D4D4D"
+                android:textSize="@dimen/txtSizeXNormal" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="@string/email"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/etFullName"
+                android:fontFamily="@font/poppins_regular"
+                android:elevation="@dimen/_1sdp"
+                android:textColorHint="@color/color_4D4D4D"
+                android:textSize="@dimen/txtSizeXNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:minHeight="@dimen/btnNormalSize"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="@string/phone_number"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:digits="0123456789"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/etEmail"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/color_4D4D4D"
+                android:textSize="@dimen/txtSizeXNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:minHeight="@dimen/btnNormalSize"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="@string/password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/etPhone"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/color_4D4D4D"
+                android:textSize="@dimen/txtSizeXNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:minHeight="@dimen/btnNormalSize"
+                />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:hint="@string/confirm_password"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_edit_rounded"
+                android:layout_below="@id/etPassword"
+                android:elevation="@dimen/_1sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/color_4D4D4D"
+                android:textSize="@dimen/txtSizeXNormal"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:minHeight="@dimen/btnNormalSize"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnNormalSize"
+                android:textSize="@dimen/txtSizeNormal"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:layout_below="@id/etConfirmPassword"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/colorWhite"
+                android:elevation="@dimen/_1sdp"
+                android:foreground="@drawable/ripple_rec"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_rounded_blue_5sdp"
+                android:minHeight="@dimen/btnNormalSize"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvByCont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="By Continuing you agree to accept our"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_below="@id/btnSignUp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textSize="@dimen/txtSizeSmall" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_below="@id/tvByCont"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:foreground="@drawable/ripple_rec"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="&amp;"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTermCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/terms_of_service"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:foreground="@drawable/ripple_rec"
+                    android:textSize="@dimen/txtSizeSmall" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

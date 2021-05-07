@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_0057FF">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_img" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:src="@drawable/ic_logo" />
+
+        <RelativeLayout
+            android:id="@+id/rlGmail"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:elevation="@dimen/_2sdp"
+            android:background="@drawable/bg_rounded_white_5sdp"
+            android:foreground="@drawable/ripple_rec"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGmail"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_google" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSignupWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/ivGmail"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/sign_in_with_google"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txtSizeNormal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMail"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@id/rlGmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:elevation="@dimen/_2sdp"
+            android:background="@drawable/bg_rounded_white_5sdp"
+            android:foreground="@drawable/ripple_rec"
+            android:gravity="center"
+           >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMail"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mail" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/ivMail"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/sign_up_with_email"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/txtSizeNormal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/already_have_a_account"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/txtSizeSmall" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtAlready"
+                android:fontFamily="@font/poppins_medium"
+                android:foreground="@drawable/ripple_rec"
+                android:text="@string/login"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/txtSizeSmall" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

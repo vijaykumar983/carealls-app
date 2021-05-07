@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rowProductItem"
+        android:layout_width="@dimen/_137sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:elevation="@dimen/_2sdp"
+        android:background="@drawable/bg_rounded_white_10sdp"
+        >
+
+    <!--<androidx.cardview.widget.CardView
+        android:id="@+id/cardviewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        android:background="@drawable/bg_rounded_white_10sdp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/_2sdp"
+            />
+    </androidx.cardview.widget.CardView>-->
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@color/color_view"
+            android:scaleType="fitXY"
+            app:sriv_left_top_corner_radius="@dimen/_10sdp"
+            app:sriv_right_top_corner_radius="@dimen/_10sdp"
+            app:sriv_left_bottom_corner_radius="0dp"
+            app:sriv_right_bottom_corner_radius="0dp"
+            app:sriv_border_width="0dp"
+            app:sriv_border_color="#008fea"
+            android:layout_margin="@dimen/_2sdp"
+            app:sriv_oval="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:layout_below="@id/ivProduct"
+            >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvProductTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/txtSizeSmall"
+            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_C4C4C4"
+                android:layout_marginVertical="@dimen/_5sdp"
+                />
+            <LinearLayout
+                android:id="@+id/llWhatsappShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:foreground="@drawable/ripple_round"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/ic_whatsapp"
+                    android:layout_gravity="center_vertical"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/whtsapp"
+                    android:textColor="@color/color_00B247"
+                    android:textSize="@dimen/txtSizeSSmall"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

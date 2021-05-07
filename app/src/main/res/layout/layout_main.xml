@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        style="@style/HW_MM"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/appBar"
+            style="@style/HW_WW"
+            layout="@layout/app_bar" />
+
+
+        <RelativeLayout
+            style="@style/HW_MM"
+            android:layout_below="@+id/appBar"
+            android:background="@color/white">
+
+            <FrameLayout
+                android:id="@+id/container"
+                style="@style/HW_MM">
+
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:alpha="0.2"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ic_bg_circle" />
+                </RelativeLayout>-->
+            </FrameLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        style="@style/HW_WM"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:foreground="@drawable/ripple_round"
+            android:gravity="center"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout style="@style/HW_MM">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTitle"
+                    style="@style/HW_WM"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivHeaderProfile"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtSizeTitle"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivHeaderProfile"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_50sdp"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_location"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/linearLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/ripple_rec"
+                       >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textColor="@color/color_7B7B7B"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="@dimen/txtSizeSmall" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:singleLine="true"
+                        android:layout_marginTop="@dimen/_minus5sdp"
+                        android:text="mansarovar, Jaipur"
+                        android:layout_below="@id/txtLocation"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txtSizeSmall" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/ivHeaderProfile"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:foreground="@drawable/ripple_round"
+                    android:src="@drawable/user"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="@dimen/_1sdp"
+                   />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</layout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/appBar"
+            layout="@layout/layout_header" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                >
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/ivUpdateProfile"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/user"
+                    app:civ_border_color="@color/white"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:civ_border_width="0.5dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/txtSizeNormal" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/poppins_regular"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/color_4D4D4D"
+                    android:textSize="@dimen/txtSizeXSmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llReview"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:background="@drawable/bg_rounded_green_20sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:foreground="@drawable/ripple_round"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:src="@drawable/ic_star" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/whyte_regular"
+                            android:text="4.5"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txtSizeSmall" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llEditListing"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:background="@drawable/bg_rounded_blue_20sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:foreground="@drawable/ripple_round"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_3sdp"
+                            android:tint="@color/color_0057FF"
+                            android:src="@drawable/ic_edit" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/whyte_regular"
+                            android:text="@string/edit_listing"
+                            android:textColor="@color/color_0057FF"
+                            android:textSize="@dimen/txtSizeSmall" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_rounded_top_white_30sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:clipToPadding="false"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtProducts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/products"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txtSizeNormal" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvUpdateProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:spanCount="2"
+                        tools:itemCount="4"
+                        android:layout_below="@id/txtProducts"
+                        tools:listitem="@layout/row_update_product" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnAddProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btnNormalSize"
+                        android:textSize="@dimen/txtSizeNormal"
+                        android:text="+ Add Product"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/color_0057FF"
+                        android:elevation="@dimen/_1sdp"
+                        android:foreground="@drawable/ripple_rec"
+                        android:layout_below="@id/rvUpdateProduct"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/bg_corner_rounded_blue_5sdp"
+                        android:minHeight="@dimen/btnNormalSize"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btnNormalSize"
+                        android:layout_marginVertical="@dimen/_15sdp"
+                        android:background="@drawable/bg_rounded_blue_5sdp"
+                        android:elevation="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:foreground="@drawable/ripple_rec"
+                        android:minHeight="@dimen/btnNormalSize"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        android:visibility="invisible"
+                        android:layout_below="@id/btnAddProduct"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/txtSizeNormal" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</layout>

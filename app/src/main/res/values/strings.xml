@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">CareAlls</string>
+    <string name="google_maps_api_key">AIzaSyBSJfMLHFSv8v7bLI7lPdyvYMMcxtpEEzI</string> <!--AIzaSyDSP32EaFJEnO7HdHJB8HcxhJJ0Wq8LTbU-->
+    <string name="googleAccountWebClientID">840074987962-s00kekhuh8a8g3fusp4vr4vmtt4ums1t.apps.googleusercontent.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="sign_up_with_email">Sign up with Email</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="already_have_a_account">Already have a account?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="by_continuing_you_agree_to_accept_our_nprivacy_policy_amp_terms_of_service"><![CDATA[By Continuing you agree to accept our \n Privacy Policy & Terms of Service]]></string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="password_reset_request">Password reset request has been sent to \nyour registered email address.</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="submit">Submit</string>
+    <string name="listing">Listing</string>
+
+    <!-- String array for Drawer Layout-->
+    <string-array name="drawerNames">
+        <item>Home</item>
+        <item>Category</item>
+        <item>Listings</item>
+        <item>Edit Profile</item>
+        <item>Manage Listing</item>
+        <item>Support</item>
+        <item>Share</item>
+        <item>Logout</item>
+
+    </string-array>
+
+    <string name="no_internet">No internet connection</string>
+    <string name="internet_issue">Internet Issue</string>
+    <string name="please_check_your_internet">Please check your internet connection, app is not working due to internet issue</string>
+    <string name="locations">Locations</string>
+    <string name="products">Products</string>
+    <string name="whtsapp">Whtsapp</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="add_business_name">Add Business Name</string>
+    <string name="description">Description</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_gallery_images">Add Gallery Images</string>
+    <string name="add_product">Add Product</string>
+    <string name="price">Price</string>
+    <string name="your_request_has_been_submitted_to_admin_for_approval">Your request has been submitted to admin for approval</string>
+    <string name="edit_listing">Edit Listing</string>
+    <string name="name">Name</string>
+    <string name="view_all">View All</string>
+    <string name="product_description">Product description</string>
+    <string name="catalogue">Catalogue</string>
+    <string name="gallery">Gallery</string>
+    <string name="reviews">Reviews</string>
+    <string name="send_enquiry">Send Enquiry</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="categories">Categories</string>>
+
+    <!--All Validations-->
+    <string name="select_product_name">Please Select Product Name</string>
+    <string name="select_category_name">Please Select Category Name</string>
+    <string name="enter_product_name">Please enter product name</string>
+    <string name="enter_name">Please enter name</string>
+    <string name="enter_description">Please enter description</string>
+    <string name="enter_business_name">Please enter Business Name</string>
+    <string name="enter_price">Please enter price</string>
+    <string name="enter_full_name">Please enter full name</string>
+    <string name="enter_first_name">Please enter first name</string>
+    <string name="enter_last_name">Please enter last name</string>
+    <string name="enter_otp">Please enter otp</string>
+    <string name="enter_otp_plz">Please enter 8 digit OTP code</string>
+    <string name="enter_email">Please enter Email Id</string>
+    <string name="minimum_3_char_long_business_name">Please enter business name at least 3 characters long</string>
+    <string name="minimum_3_char_long_name">Please enter name at least 3 characters long</string>
+    <string name="minimum_3_char_long">Please enter full name at least 3 characters long</string>
+    <string name="minimum_3_char_long_description">Please enter description at least 3 characters long</string>
+    <string name="minimum_3_char_long_product_name">Please enter product name at least 3 characters long</string>
+    <string name="minimum_3_char_long_first_name">Please enter first name at least 3 characters long</string>
+    <string name="minimum_3_char_long_last_name">Please enter last name at least 3 characters long</string>
+    <string name="enter_valid_otp">Please enter valid otp</string>
+    <string name="enter_valid_email_id">Please enter valid email ID</string>
+    <string name="enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="enter_valid_whatsapp_number">Please enter valid whatsapp number</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_old_password">Please enter old password</string>
+    <string name="enter_cpassword">Please enter confirm password</string>
+    <string name="minimum_6_characters">Please enter at least 6 characters</string>
+    <string name="password_not_match">Password and confirm password do not match</string>
+    <string name="accept_terms_of_use">Please accept Terms and Conditions</string>
+    <string name="enter_new_password">Please enter new password</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="please_select_image">Please select image</string>
+    <string name="please_select_gallery_img">Please select gallery image</string>
+    <string name="enter_address">Please enter address</string>
+    <string name="minimum_3_char_long_address">Please enter address at least 3 characters long</string>
+
+
+    <string name="permission_required">Permissions Required</string>
+    <string name="you_have_forcefully">You have forcefully denied some of the required permissions</string>
+    <string name="for_this_action">for this action. Please open settings, go to permissions and allow them.</string>
+    <string name="product_name">Product Name</string>
+    <string name="search">Search</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="terms_of_service"><u>Terms of Service</u></string>
+
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rowReviewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_white_10sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:elevation="@dimen/_2sdp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp"
+            >
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ivReviewProfile"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="0.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_8sdp"
+                >
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvReviewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/txtSizeSmall"
+                        android:singleLine="true"
+                        android:fontFamily="@font/poppins_regular"
+                        />
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/myRatingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:theme="@style/RatingBar"
+                    android:isIndicator="true" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDetail"
+                        style="@style/HW_WW"
+                        android:textColor="@color/color_4D4D4D"
+                        android:text=""
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:textSize="@dimen/txtSizeXSmall"
+                        />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>

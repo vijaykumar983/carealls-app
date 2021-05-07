@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rowAllLocationItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_margin="@dimen/_5sdp"
+        >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_8sdp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAllLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/color_view"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:foreground="#40000000"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAllLocationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaipur"
+            android:textSize="@dimen/txtSizeSmall"
+            android:textColor="@color/colorWhite"
+            android:layout_alignBottom="@id/ivLocation"
+            android:layout_gravity="bottom|center_horizontal"
+            android:fontFamily="@font/poppins_regular"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingHorizontal="@dimen/_3sdp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</layout>
